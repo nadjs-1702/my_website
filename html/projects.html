@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/CSS/projectsstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Bungee+Outline&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Bungee+Inline&family=Bungee+Outline&display=swap" rel="stylesheet">
+    <title>Nadja Siegrist</title>
+</head>
+<body>
+    <h2>Nadja Siegrist</h2>
+    <div class="text-container">
+        <div id="animated-text">..drawing......</div>
+    </div>
+
+    <!-- Link zur externen JavaScript-Datei -->
+    <script src="/JS/home.js"></script>
+
+    <!-- Schaltfläche zum Öffnen des Overlays -->
+    <div style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </div>
+
+    <!-- Overlay für die Navigation -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">home</a>
+            <a href="projects.html">portfolio</a>
+            <a href="aboutme.html">about me</a>
+            <a href="contact.html">contact</a>
+        </div>
+    </div>
+
+    <!-- JavaScript-Funktionen zum Steuern des Overlays -->
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+    <h2>PORTFOLIO</h2>
+
+    <div class="row">
+        <div class="column">
+            <img src="/IMG/acryl/pilzacrylganz.jpg" alt="pilzwald" onclick="openModal('pilzwald')">
+            <img src="/IMG/acryl/polandpregnancy.jpg" alt="polandpregnancy" onclick="openModal('polandpregnancy')">
+            <img src="/IMG/acryl/blumenfingermalen.jpg" alt="blumenfingermalen" onclick="openModal('blumenfingermalen')">
+            <img src="/IMG/mushroom/rainbowpilz.jpg" alt="rainbowpilz" onclick="openModal('rainbowpilz')">
+            <img src="/IMG/mushroom/viel_pilzemitgesicht.jpg" alt="viel_pilzemitgesicht" onclick="openModal('viel_pilzemitgesicht')">
+            <img src="/IMG/mushroom/kleinerpilzbiglips.jpg" alt="kleinerpilzbiglips" onclick="openModal('kleinerpilzbiglips')">
+            <img src="/IMG/mushroom/viele_pilze.jpg" alt="viel_pilze" onclick="openModal('viel_pilze')">
+        </div>
+        <div class="column">
+            <img src="/IMG/collage/collage1.jpg" alt="collage1" onclick="openModal('collage1')">
+            <img src="/IMG/collage/collage2.jpg" alt="collage2" onclick="openModal('collage2')">
+            <img src="/IMG/collage/collage3.jpeg" alt="collage3" onclick="openModal('collage3')">
+            <img src="/IMG/druck/Risodruck/Tobi_risodruck.jpg" alt="risodruck" onclick="openModal('risodruck')">
+            <img src="/IMG/druck/stempel/stempeldruck_blume_gelb.jpg" alt="stempeldruck" onclick="openModal('stempeldruck')">
+            <img src="/IMG/flatbook/buchfächer.jpg" alt="flatbook" onclick="openModal('flatbook')">
+        </div>
+        <div class="column">
+            <img src="/IMG/ausstellung sa/ausstelltung_sa_10.jpg" alt="ausstellung_sa" onclick="openModal('ausstellung_sa')">
+            <img src="/IMG/toepfern/toepfern_schale_blau_1.jpg" alt="toepfern_schale_blau" onclick="openModal('toepfern_schale_blau')">
+            <img src="/IMG/toepfern/toepfern_2schalen_1.jpg" alt="toepfern_2schalen" onclick="openModal('toepfern_2schalen')">
+            <img src="/IMG/toepfern/toepfern_espressotasse.jpg" alt="espressotasse" onclick="openModal('espressotasse')">
+            <img src="/IMG/toepfern/toepfern_schale_verschieden_3.jpg" alt="toepfern_schale_verschieden" onclick="openModal('toepfern_schale_verschieden')">
+            <img src="/IMG/toepfern/toepfernschalen_tropfen_1.jpg" alt="toepfernschalen_tropfen" onclick="openModal('toepfernschalen_tropfen')">
+            <img src="/IMG/Karton/Karton_relief_main.JPG" alt="karton_relief" onclick="openModal('karton_relief')">
+        </div>
+        <div class="column">
+            <img src="/IMG/Ton/alberto/alberto_giacometti_relief.jpg" alt="alberto_giacometti_relief" onclick="openModal('alberto_giacometti_relief')">
+            <img src="/IMG/Ton/vollplastik/vollplastik_main.jpg" alt="vollplastik" onclick="openModal('vollplastik')">
+            <img src="/IMG/schwarzweiss_portrait/portrait_storren_schwarz-weiss.jpg" alt="portrait_storren_schwarz-weiss" onclick="openModal('portrait_storren_schwarz-weiss')">
+            <img src="/IMG/schwarzweiss_portrait/portrait_zwei_Gesichter.jpg" alt="portrait_zwei_Gesichter" onclick="openModal('portrait_zwei_Gesichter')">
+            <img src="/IMG/schwarzweiss_portrait/vier_bilder_schwarz_weiss.jpg" alt="vier_bilder_schwarz_weiss" onclick="openModal('vier_bilder_schwarz_weiss')">
+            <img src="/IMG/tube/tube_8.jpg" alt="tube" onclick="openModal('tube')">
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-content" class="modal-content">
+        <!-- Slides will be inserted here dynamically -->
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div id="caption" class="caption"></div>
+      <div id="description" class="description"></div>
+    </div>
+    
+
+    <script src="scripts.js"></script>
+    <footer>
+        <p> Nadja Siegrist </p>
+        <p> nadja.siegrist@gmx.ch </p>
+        <p> nadja.siegrist@stud.fhgr.ch </p>
+    </footer>
+</body>
+</html>
+

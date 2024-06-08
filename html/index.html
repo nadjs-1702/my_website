@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Bungee+Outline&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Bungee+Inline&family=Bungee+Outline&display=swap" rel="stylesheet">
+    <title>Nadja Siegrist</title>
+</head>
+<body>
+    <h2>Nadja Siegrist</h2>
+    <div class="text-container">
+        <div id="animated-text">..drawing......</div>
+    </div>
+
+    <!-- Link zur externen JavaScript-Datei -->
+    <script src="/JS/home.js"></script>
+
+    <!-- Schaltfläche zum Öffnen des Overlays -->
+    <div style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </div>
+
+    <!-- Overlay für die Navigation -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">home</a>
+            <a href="projects.html">portfolio</a>
+            <a href="aboutme.html">about me</a>
+            <a href="contact.html">contact</a>
+        </div>
+    </div>
+
+    <!-- JavaScript-Funktionen zum Steuern des Overlays -->
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+    <footer>
+      <p> Nadja Siegrist </p>
+      <p> nadja.siegrist@gmx.ch </p>
+      <p> nadja.siegrist@stud.fhgr.ch </p>
+    </footer>
+</body>
+</html>
