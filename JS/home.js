@@ -25,6 +25,8 @@ function openNav() {
   }
 
   /*PORTFOLIO IMAGEGRIDE UND MODAL*/
+
+  
   let slideIndex = 1;
 
   const galleries = {
@@ -73,6 +75,28 @@ function openNav() {
         { src: '/IMG/mushroom/viel_pilzemitgesicht.jpg', caption: 'Underwater Photo 1' },
       ],
       description: 'Hier Beschreibung für Viel Pilze.'
+      
+    },
+    collage1: {
+      slides: [
+        { src: '/IMG/collage/collage1.jpg', caption: 'Collage 1' },
+      ],
+      description: 'Hier Beschreibung für Viel Pilze.'
+      
+    },
+    collage2: {
+      slides: [
+        { src: '/IMG/collage/collage2.jpg', caption: 'Collage 2' },
+      ],
+      description: 'Hier Beschreibung für Viel Pilze.'
+      
+    },
+    collage3: {
+      slides: [
+        { src: '/IMG/collage/collage3.jpeg', caption: 'Collage 3' },
+      ],
+      description: 'Hier Beschreibung für Viel Pilze.'
+      
     },
     risodruck: {
       slides: [
@@ -86,8 +110,8 @@ function openNav() {
     },
     stempeldruck: {
       slides: [
-        { src: '/IMG/druck/stempel/stempeldruck_blume_gelb.jpg.jpg', caption: 'Stempeldruck, Margeriten auf gelb' },
-        { src: '/IMG/druck/stempel/stempeldruck_grün_1.jpg.jpg', caption: 'Stempeldruck, Buchzeichen und Karte' },
+        { src: '/IMG/druck/stempel/stempeldruck_blume_gelb.jpg', caption: 'Stempeldruck, Margeriten auf gelb' },
+        { src: '/IMG/druck/stempel/stempeldruck_grün_1.jpg', caption: 'Stempeldruck, Buchzeichen und Karte' },
         { src: '/IMG/druck/stempel/stempeldruck_grün_2.jpg', caption: 'Stempeldruck, Buchzeichen und Buch' },
         { src: '/IMG/druck/stempel/stempeldruck_rotgrün.jpg', caption: 'Stempeldruck, Notizhefte' }
       ],
@@ -254,46 +278,49 @@ function openNav() {
     }
   };
   
+  
+
   function openModal(project) {
     const modalContent = document.getElementById('modal-content');
     modalContent.innerHTML = '';
-  
+
     galleries[project].slides.forEach((slide, index) => {
-      const slideDiv = document.createElement('div');
-      slideDiv.classList.add('mySlides');
-      if (index === 0) slideDiv.style.display = 'block';
-  
-      const img = document.createElement('img');
-      img.src = slide.src;
-      img.alt = slide.caption;
-  
-      slideDiv.appendChild(img);
-      modalContent.appendChild(slideDiv);
+        const slideDiv = document.createElement('div');
+        slideDiv.classList.add('mySlides');
+        if (index === 0) slideDiv.style.display = 'block';
+
+        const img = document.createElement('img');
+        img.src = slide.src;
+        img.alt = slide.caption;
+
+        slideDiv.appendChild(img);
+        modalContent.appendChild(slideDiv);
     });
-  
-    document.getElementById('caption').innerText = galleries[project].slides[0].caption;
+
     document.getElementById('description').innerText = galleries[project].description;
     document.getElementById('myModal').style.display = 'block';
     slideIndex = 1;
-  }
-  
-  function closeModal() {
+    showSlides(slideIndex); // Display the first slide
+}
+
+function closeModal() {
     document.getElementById('myModal').style.display = 'none';
-  }
-  
-  function plusSlides(n) {
+}
+
+function plusSlides(n) {
     showSlides(slideIndex += n);
-  }
-  
-  function showSlides(n) {
+}
+
+function showSlides(n) {
     let i;
     const slides = document.getElementsByClassName('mySlides');
     if (n > slides.length) slideIndex = 1;
     if (n < 1) slideIndex = slides.length;
     for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = 'none';
+        slides[i].style.display = 'none';
     }
     slides[slideIndex - 1].style.display = 'block';
-    document.getElementById('caption').innerText = slides[slideIndex - 1].getElementsByTagName('img')[0].alt;
-  }
+    const caption = slides[slideIndex - 1].getElementsByTagName('img')[0].alt;
+    document.getElementById('caption').innerText = caption;
+}
   

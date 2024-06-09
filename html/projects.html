@@ -14,41 +14,45 @@
 <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Bungee+Inline&family=Bungee+Outline&display=swap" rel="stylesheet">
     <title>Nadja Siegrist</title>
 </head>
-<body>
-    <h2>Nadja Siegrist</h2>
-    <div class="text-container">
-        <div id="animated-text">..drawing......</div>
-    </div>
+<header>
+ <h2>Nadja Siegrist</h2>
+  <div class="text-container">
+      <div id="animated-text">..drawing......</div>
+  </div>
 
-    <!-- Link zur externen JavaScript-Datei -->
-    <script src="/JS/home.js"></script>
+  <!-- Link zur externen JavaScript-Datei -->
+  <script src="/JS/home.js"></script>
 
-    <!-- Schaltfläche zum Öffnen des Overlays -->
-    <div style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </div>
+  <!-- Schaltfläche zum Öffnen des Overlays -->
+  <div style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </div>
 
-    <!-- Overlay für die Navigation -->
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="index.html">home</a>
-            <a href="projects.html">portfolio</a>
-            <a href="aboutme.html">about me</a>
-            <a href="contact.html">contact</a>
-        </div>
-    </div>
+  <!-- Overlay für die Navigation -->
+  <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+          <a href="index.html">home</a>
+          <a href="projects.html">portfolio</a>
+          <a href="aboutme.html">about me</a>
+          <a href="contact.html">contact</a>
+      </div>
+  </div>
 
-    <!-- JavaScript-Funktionen zum Steuern des Overlays -->
-    <script>
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
+  <!-- JavaScript-Funktionen zum Steuern des Overlays -->
+  <script>
+      function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+      }
 
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
-    </script>
+      function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+      }
+  </script>
 
     <h2>PORTFOLIO</h2>
+
+</header>
+<body>
+ 
 
     <div class="row">
         <div class="column">
@@ -59,6 +63,17 @@
             <img src="/IMG/mushroom/viel_pilzemitgesicht.jpg" alt="viel_pilzemitgesicht" onclick="openModal('viel_pilzemitgesicht')">
             <img src="/IMG/mushroom/kleinerpilzbiglips.jpg" alt="kleinerpilzbiglips" onclick="openModal('kleinerpilzbiglips')">
             <img src="/IMG/mushroom/viele_pilze.jpg" alt="viel_pilze" onclick="openModal('viel_pilze')">
+            <img src="/IMG/LAngebelichtungszeit/Lichtzeichnen_1.JPG" alt="Lichtzeichnen_1" onclick="openModal('Lichtzeichnen_1')">
+            <img src="/IMG/LAngebelichtungszeit/Lichtzeichnen_2.JPG" alt="Lichtzeichnen_2" onclick="openModal('Lichtzeichnen_2')">
+            <img src="/IMG/LAngebelichtungszeit/Lichtzeichnen_3.JPG" alt="Lichtzeichnen_3" onclick="openModal('Lichtzeichnen_3')">
+            <img src="/IMG/schrift_eckigefont/Eckige_Schrift.jpg" alt="Eckige_Schrift" onclick="openModal('Eckige_Schrift')">
+            <img src="/IMG/sketching/bag/liegend_bag.jpg" alt="liegend_bag" onclick="openModal('liegend_bag')">
+            <img src="/IMG/sketching/kopf/kopfsketch.jpg" alt="kopfsketch" onclick="openModal('kopfsketch')">
+            <img src="/IMG/sketching/skull/schraffur_skull.jpg" alt="schraffur_skull" onclick="openModal('schraffur_skull')">
+            <img src="/IMG/sketching/steindrachen/drache_kribbel_sketch.jpg" alt="drache_kribbel_sketch" onclick="openModal('drache_kribbel_sketch')">
+            <img src="/IMG/sketching/steindrachen/vogel_skribbel_sketch.jpg" alt="vogel_skribbel_sketch" onclick="openModal('vogel_skribbel_sketch')">
+            <img src="/IMG/Illustrator/plattencover_1.jpg" alt="plattencover" onclick="openModal('plattencover')">
+            <img src="/IMG/Illustrator/Pilzplakat mit drip und anerii blau.jpg" alt="Champignon" onclick="openModal('Champignon')">
         </div>
         <div class="column">
             <img src="/IMG/collage/collage1.jpg" alt="collage1" onclick="openModal('collage1')">
@@ -67,6 +82,20 @@
             <img src="/IMG/druck/Risodruck/Tobi_risodruck.jpg" alt="risodruck" onclick="openModal('risodruck')">
             <img src="/IMG/druck/stempel/stempeldruck_blume_gelb.jpg" alt="stempeldruck" onclick="openModal('stempeldruck')">
             <img src="/IMG/flatbook/buchfächer.jpg" alt="flatbook" onclick="openModal('flatbook')">
+            <img src="/IMG/oelkreide/ölgesicht_1.jpg" alt="ölgesicht_1" onclick="openModal('oelgesicht_1')">
+            <img src="/IMG/oelkreide/ölgesicht_2.jpg" alt="ölgesicht_2" onclick="openModal('oelgesicht_2')">
+            <img src="/IMG/oelkreide/ölgesicht_3.jpg" alt="ölgesicht_3" onclick="openModal('oelgesicht_3')">
+            <img src="/IMG/oelkreide/ölgesicht_4.jpg" alt="ölgesicht_4" onclick="openModal('oelgesicht_4')">
+            <img src="/IMG/oelkreide/ölgesicht_5.jpg" alt="ölgesicht_5" onclick="openModal('oelgesicht_5')">
+            <img src="/IMG/oelkreide/ölgesicht_6.jpg" alt="ölgesicht_6" onclick="openModal('oelgesicht_6')">
+            <img src="/IMG/Illustrator/pilzplakat_drip.jpg" alt="pilzplakat_drip" onclick="openModal('pilzplakat_drip')">
+            <img src="/IMG/gips/gips_schwarzlicht_2.jpg" alt="gips_schwarzlicht" onclick="openModal('gips_schwarzlicht')">
+            <img src="/IMG/wachsstifte/wachsgesicht_1.jpg" alt="wachsgesicht_1" onclick="openModal('wachsgesicht_1')">
+            <img src="/IMG/wachsstifte/wachsgesicht_2.jpg" alt="wachsgesicht_2" onclick="openModal('wachsgesicht_2')">
+            <img src="/IMG/wachsstifte/wachsgesicht_3.jpg" alt="wachsgesicht_3" onclick="openModal('wachsgesicht_3')">
+            <img src="/IMG/wachsstifte/wachsgesicht_4.jpeg" alt="wachsgesicht_4" onclick="openModal('wachsgesicht_4')">
+            <img src="/IMG/wachsstifte/wachsgesicht_5.jpg" alt="wachsgesicht_5" onclick="openModal('wachsgesicht_5')">
+            
         </div>
         <div class="column">
             <img src="/IMG/ausstellung sa/ausstelltung_sa_10.jpg" alt="ausstellung_sa" onclick="openModal('ausstellung_sa')">
@@ -76,6 +105,20 @@
             <img src="/IMG/toepfern/toepfern_schale_verschieden_3.jpg" alt="toepfern_schale_verschieden" onclick="openModal('toepfern_schale_verschieden')">
             <img src="/IMG/toepfern/toepfernschalen_tropfen_1.jpg" alt="toepfernschalen_tropfen" onclick="openModal('toepfernschalen_tropfen')">
             <img src="/IMG/Karton/Karton_relief_main.JPG" alt="karton_relief" onclick="openModal('karton_relief')">
+            <img src="/IMG/Kohle/kohle_kopf_1.jpg" alt="kohle_gesicht_1" onclick="openModal('kohle_gesicht_1')">
+            <img src="/IMG/Kohle/kohle_kopf_2.jpg" alt="kohle_gesicht_2" onclick="openModal('kohle_gesicht_2')">
+            <img src="/IMG/Kohle/kohle_kopf_3.jpg" alt="kohle_gesicht_3" onclick="openModal('kohle_gesicht_3')">
+            <img src="/IMG/Kohle/kohle_kopf_4.jpg" alt="kohle_gesicht_4" onclick="openModal('kohle_gesicht_4')">
+            <img src="/IMG/Kohle/kohle_kopf_5.jpg" alt="kohle_gesicht_5" onclick="openModal('kohle_gesicht_5')">
+            <img src="/IMG/Kohle/kohle_kopf_6.jpg" alt="kohle_gesicht_6" onclick="openModal('kohle_gesicht_6')">
+            <img src="/IMG/Kohle/kohle_kopf_7.jpg" alt="kohle_gesicht_7" onclick="openModal('kohle_gesicht_7')">
+            <img src="/IMG/Kohle/kohle_kopf_8.jpg" alt="kohle_gesicht_8" onclick="openModal('kohle_gesicht_8')">
+            <img src="/IMG/Kohle/kohle_kopf_9.jpg" alt="kohle_gesicht_9" onclick="openModal('kohle_gesicht_9')">
+            <img src="/IMG/Kohle/kohle_nilpferd.jpg" alt="kohle_nilpferd" onclick="openModal('kohle_nilpferd')">
+            <img src="/IMG/Kohle/kohle_portrait.jpg" alt="kohle_portrait" onclick="openModal('kohle_portrait')">
+            <img src="/IMG/Kohle/kohle_portrait (2).jpg" alt="kohle_portrait_2" onclick="openModal('kohle_portrait_2')">
+            <img src="/IMG/Kohle/kohle_hand.png" alt="kohle_hand" onclick="openModal('kohle_hand')">
+
         </div>
         <div class="column">
             <img src="/IMG/Ton/alberto/alberto_giacometti_relief.jpg" alt="alberto_giacometti_relief" onclick="openModal('alberto_giacometti_relief')">
@@ -84,6 +127,35 @@
             <img src="/IMG/schwarzweiss_portrait/portrait_zwei_Gesichter.jpg" alt="portrait_zwei_Gesichter" onclick="openModal('portrait_zwei_Gesichter')">
             <img src="/IMG/schwarzweiss_portrait/vier_bilder_schwarz_weiss.jpg" alt="vier_bilder_schwarz_weiss" onclick="openModal('vier_bilder_schwarz_weiss')">
             <img src="/IMG/tube/tube_8.jpg" alt="tube" onclick="openModal('tube')">
+            <img src="/IMG/pastellkreide/pastellgesicht_1.jpg" alt="pastellgesicht_1" onclick="openModal('pastellgesicht_1')">
+            <img src="/IMG/pastellkreide/pastellgesicht_2.jpg" alt="pastellgesicht_2" onclick="openModal('pastellgesicht_2')">
+            <img src="/IMG/pastellkreide/pastell_pilze.jpg" alt="pastell_pilze" onclick="openModal('pastell_pilze')">
+            <img src="/IMG/corsettop/corset 2.jpg" alt="corset 2" onclick="openModal('corsett')">
+            <img src="/IMG/akt/angezogen/alice.jpg" alt="alice" onclick="openModal('alice')">
+            <img src="/IMG/akt/angezogen/basil.jpg" alt="basil" onclick="openModal('basil')">
+            <img src="/IMG/akt/angezogen/sina.jpg" alt="sina" onclick="openModal('sina')">
+            <img src="/IMG/akt/angezogen/marvin.jpg" alt="marvin" onclick="openModal('marvin')">
+            <img src="/IMG/akt/nude/akt_nude_1.jpg" alt="akt_nude_1" onclick="openModal('akt_nude_1')">
+            <img src="/IMG/akt/nude/akt_nude_2.jpg" alt="akt_nude_1" onclick="openModal('akt_nude_1')">
+            <img src="/IMG/akt/nude/akt_nude_3.jpg" alt="akt_nude_1" onclick="openModal('akt_nude_1')">
+            <img src="/IMG/akt/nude/akt_nude_4.jpg" alt="akt_nude_1" onclick="openModal('akt_nude_1')">
+            <img src="/IMG/akt/nude/akt_nude_5.jpg" alt="akt_nude_1" onclick="openModal('akt_nude_1')">
+            <img src="/IMG/akt/nude/akt_nude_6.jpg" alt="akt_nude_1" onclick="openModal('akt_nude_1')">
+            <img src="/IMG/akt/nude/akt_nude_7.jpg" alt="akt_nude_1" onclick="openModal('akt_nude_1')">
+            <img src="/IMG/akt/nude/akt_nude_8.jpg" alt="akt_nude_1" onclick="openModal('akt_nude_1')">
+            <img src="/IMG/akt/nude/akt_nude_9.jpg" alt="akt_nude_1" onclick="openModal('akt_nude_1')">
+            <img src="/IMG/akt/nude/akt_nude_10.jpg" alt="akt_nude_1" onclick="openModal('akt_nude_1')">
+            <img src="/IMG/akt/nude/akt_nude_11.jpg" alt="akt_nude_1" onclick="openModal('akt_nude_1')">
+            <img src="/IMG/akt/nude/akt_nude_12.jpg" alt="akt_nude_1" onclick="openModal('akt_nude_1')">
+            <img src="/IMG/akt/nude/akt_nude_13.jpg" alt="akt_nude_1" onclick="openModal('akt_nude_1')">
+            <img src="/IMG/akt/nude/akt_nude_14.jpg" alt="akt_nude_1" onclick="openModal('akt_nude_1')">
+            <img src="/IMG/akt/nude/akt_nude_15.jpg" alt="akt_nude_1" onclick="openModal('akt_nude_1')">
+            <img src="/IMG/akt/nude/akt_nude_16.jpg" alt="akt_nude_1" onclick="openModal('akt_nude_1')">
+            <img src="/IMG/akt/nude/akt_nude_17.jpg" alt="akt_nude_1" onclick="openModal('akt_nude_1')">
+            <img src="/IMG/akt/nude/akt_nude_18.jpg" alt="akt_nude_1" onclick="openModal('akt_nude_1')">
+           
+
+            
         </div>
     </div>
 
@@ -94,8 +166,10 @@
       </div>
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      <div id="caption" class="caption"></div>
-      <div id="description" class="description"></div>
+      <div class="modal-caption">
+        <p id="caption" class="caption"></p>
+        <p id="description" class="description"></p>
+      </div>
     </div>
     
 

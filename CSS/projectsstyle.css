@@ -1,48 +1,50 @@
-.bungee-inline-regular {
+  .bungee-inline-regular {
     font-family: "Bungee Inline", sans-serif;
     font-weight: 400;
     font-style: normal;
-}
+  }
   
-.bungee-outline-regular {
+  .bungee-outline-regular {
     font-family: "Bungee Outline", sans-serif;
     font-weight: 400;
     font-style: normal;
-}
+  }
   
-.azeret-mono-unique {
+  /* <uniquifier>: Use a unique and descriptive class name
+  // <weight>: Use a value from 100 to 900*/
+  
+  .azeret-mono-unique {
     font-family: "Azeret Mono", monospace;
     font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-}
+    font-weight:weight;
+    font-style:normal;
+  }
 
 /* The Overlay (background) */
 .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
     height: 100%;
     width: 0;
-    position: fixed;
-    z-index: 1;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
     font-family: "Bungee Outline", sans-serif;
     font-weight: 400;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-}
+    font-style: normal;
+  }
   
-/* Overlay content */
+/* Position the content inside the overlay */
 .overlay-content {
     position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
   
 /* The navigation links inside the overlay */
@@ -51,8 +53,8 @@
     text-decoration: none;
     font-size: 36px;
     color: #818181;
-    display: block;
-    transition: 0.3s;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
 }
   
 /* When you mouse over the navigation links, change their color */
@@ -76,9 +78,54 @@
         top: 15px;
         right: 35px;
     }
+    body {
+        background-color: #f0f0f0;
+       margin-left: 30px;
+    }
+    
+    h2, .text-container, #animated-text {
+        margin: 10px 0; /* Adds margin to separate elements vertically */
+    }
+     
+    /* Styles for text container */
+    .text-container {
+        position: relative;
+        height: 50px;
+        overflow: hidden;
+    }
+    
+    /* Styles for animated text */
+    #animated-text {
+        display: block; /* Ensures the text appears as a block element */
+        position: absolute;
+        animation: fall 0.5s forwards, rise 0.5s forwards 0.5s;
+        font-family: "Azeret Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight:weight;
+        font-style:normal;
+      }
+    
+    
+    @keyframes fall {
+        0% { top: 0; opacity: 1; }
+        100% { top: 100%; opacity: 0; }
+    }
+    
+    @keyframes rise {
+        0% { top: -100%; opacity: 0; }
+        100% { top: 0; opacity: 1; }
+    }
+    
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0;
+        }
+    }
+    
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Azeret Mono", monospace;
   }
   
   .row {
@@ -108,24 +155,31 @@ body {
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
-  }
-  
-  .modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
     position: relative;
     margin: auto;
     padding: 0;
-    width: 90%;
-    max-width: 1200px;
-  }
-  
-  .mySlides {
+    overflow: auto;
+    max-width: 90%; /* optional, um sicherzustellen, dass es nicht zu breit wird */
+    max-height: 90%; /* optional, um sicherzustellen, dass es nicht zu hoch wird */
+}
+
+.mySlides {
     display: none;
-  }
-  
-  .mySlides img {
-    width: 100%;
-  }
-  
+    text-align: center;
+}
+
+.mySlides img {
+    max-height: 66vh;
+    max-width: 100%;
+    transition: 2s ease-in-out;
+}
+
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -180,3 +234,18 @@ body {
     margin-top: 10px;
   }
   
+  .modal-caption {
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .modal-caption p {
+    margin: 5px 0;
+  }
+  h2{
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 450%;
+}
