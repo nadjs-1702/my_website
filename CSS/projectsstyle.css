@@ -174,7 +174,7 @@ body {
     text-align: center;
 }
 
-.mySlides img {
+.mySlides img, .mySlides video {
     max-height: 66vh;
     max-width: 100%;
     transition: 2s ease-in-out;
