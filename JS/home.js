@@ -1,5 +1,4 @@
-
-  const textElement = document.getElementById('animated-text');
+const textElement = document.getElementById('animated-text');
 const texts = ["..drawing......", "..photography..", "..videography..", "..good vibes;)."];
 let index = 0;
 
@@ -41,8 +40,6 @@ function openNav() {
   polandpregnancy: {
       slides: [
           { src: '/IMG/acryl/polandpregnancy.jpg', caption: 'Poland Pregnancy', type: 'image' },
-          { src: 'rocks2.jpg', caption: 'Rocks Photo 2', type: 'image' },
-          { src: 'rocks3.jpg', caption: 'Rocks Photo 3', type: 'image' }
       ],
       description: 'Hier Beschreibung für Poland Pregnancy.'
   },
@@ -120,7 +117,7 @@ function openNav() {
           { src: '/IMG/flatbook/buchoffen_2.jpg', caption: 'Flatbook, Inhaltseiten 2', type: 'image' },
           { src: '/IMG/flatbook/buchoffen_3.jpg', caption: 'Flatbook, Inhaltseiten 3', type: 'image' },
           { src: '/IMG/flatbook/buchseite_flach.jpg', caption: 'Flatbook', type: 'image' },
-          { src: '/IMG/flatbook7deckseite_buch.jpg', caption: 'Deckseite, Druck mit Holzschnitt', type: 'image' }
+          { src: '/IMG/flatbook/deckseite_buch.jpg', caption: 'Deckseite, Druck mit Holzschnitt', type: 'image' }
       ],
       description: 'Hier Beschreibung für Flatbook.'
   },
@@ -465,28 +462,32 @@ function openNav() {
     },
   };
   
-  
-  function openModal(project) {
+  document.getElementById('openModalButton').addEventListener('click', function() {
+    const project = 'project'; // Replace 'someProject' with the desired project
+    openModal(project);
+});
+
+function openModal(project) {
     const modalContent = document.getElementById('modal-content');
     modalContent.innerHTML = '';
 
     galleries[project].slides.forEach((slide, index) => {
-      const slideDiv = document.createElement('div');
-      slideDiv.classList.add('mySlides');
-      if (index === 0) slideDiv.style.display = 'block';
+        const slideDiv = document.createElement('div');
+        slideDiv.classList.add('mySlides');
+        if (index === 0) slideDiv.style.display = 'block';
 
-      if (slide.type === 'image') {
-          const img = document.createElement('img');
-          img.src = slide.src;
-          img.alt = slide.caption;
-          slideDiv.appendChild(img);
-      } else if (slide.type === 'video') {
-          const video = document.createElement('video');
-          video.src = slide.src;
-          video.alt = slide.caption;
-          video.controls = true;
-          slideDiv.appendChild(video);
-      }
+        if (slide.type === 'image') {
+            const img = document.createElement('img');
+            img.src = slide.src;
+            img.alt = slide.caption;
+            slideDiv.appendChild(img);
+        } else if (slide.type === 'video') {
+            const video = document.createElement('video');
+            video.src = slide.src;
+            video.alt = slide.caption;
+            video.controls = true;
+            slideDiv.appendChild(video);
+        }
         modalContent.appendChild(slideDiv);
     });
 
@@ -516,4 +517,11 @@ function showSlides(n) {
     const caption = slides[slideIndex - 1].getElementsByTagName('img')[0].alt;
     document.getElementById('caption').innerText = caption;
 }
-  
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}

@@ -1,0 +1,277 @@
+.bungee-inline-regular {
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.bungee-outline-regular {
+    font-family: "Bungee Outline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* <uniquifier>: Use a unique and descriptive class name
+  // <weight>: Use a value from 100 to 900*/
+  
+  .azeret-mono-unique {
+    font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+    font-style:normal;
+  }
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    font-family: "Bungee Outline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+  
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+  
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+  
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+  
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+body {
+      margin-left: 30px;
+      color: #f1f1f1;
+}
+
+h2, .text-container, #animated-text {
+    margin: 10px 0; /* Adds margin to separate elements vertically */
+    color: #f0f0f0;
+}
+h2{
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 450%;
+}
+
+/* Styles for text container */
+.text-container {
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+
+/* Styles for animated text */
+#animated-text {
+    display: block; /* Ensures the text appears as a block element */
+    position: absolute;
+    animation: fall 0.5s forwards, rise 0.5s forwards 0.5s;
+    font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+    font-style:normal;
+  }
+
+
+@keyframes fall {
+    0% { top: 0; opacity: 1; }
+    100% { top: 100%; opacity: 0; }
+}
+
+@keyframes rise {
+    0% { top: -100%; opacity: 0; }
+    100% { top: 0; opacity: 1; }
+}
+
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+    #main {
+        margin-left: 0;
+    }
+}
+
+footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;
+    font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+    font-style:normal;
+  }
+
+
+/* Wenn du ein anderes Element als das Body-Element mit dem Hintergrundbild versehen möchtest */
+.bg-image {
+
+    color:   #f0f0f0;
+    /* Schriftfarbe weiß */
+   
+}
+h3{
+    font-family: "Bungee Outline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+    color: #f1f1f1;
+}
+h4{
+    font-family: "Bungee Outline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #f1f1f1;
+}
+
+
+.jt {
+    position: relative;
+    font-size: 10vmin;
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgb(70, 23, 23);
+  }
+  
+  .jt__row {
+    display: block;
+  }
+  .jt__row:nth-child(1) {
+    clip-path: polygon(-10% 75%, 110% 75%, 110% 110%, -10% 110%);
+  }
+  .jt__row:nth-child(2) {
+    clip-path: polygon(-10% 50%, 110% 50%, 110% 75.3%, -10% 75.3%);
+  }
+  .jt__row:nth-child(3) {
+    clip-path: polygon(-10% 25%, 110% 25%, 110% 50.3%, -10% 50.3%);
+  }
+  .jt__row:nth-child(4) {
+    clip-path: polygon(-10% 0%, 110% 0%, 110% 25.3%, -10% 25.3%);
+  }
+  
+  .jt__row.jt__row--sibling {
+    position: absolute;
+    top: 0;
+    left: 0;
+    user-select: none;
+    width:800px;
+  }
+  
+  .jt__text {
+    display: block;
+    transform-origin: bottom left;
+    animation: moveIn 4s 0s cubic-bezier(.36,0,.06,1);
+    animation-fill-mode: forwards; /* Behält die Endposition der Animation bei */
+  }
+  .jt__row:nth-child(1) .jt__text {
+    transform: translateY(-0.1em);
+  }
+  .jt__row:nth-child(2) .jt__text {
+    transform: translateY(-0.3em) scaleY(1.1);
+  }
+  .jt__row:nth-child(3) .jt__text {
+    transform: translateY(-0.5em) scaleY(1.2) ;
+  }
+  .jt__row:nth-child(4) .jt__text {
+    transform: translateY(-0.7em) scaleY(1.3) ;
+  }
+  .jt__row:nth-child(5) .jt__text {
+    transform: translateY(-0.9em) scaleY(1.4) ;
+  }
+  .jt__row:nth-child(6) .jt__text {
+    transform: translateY(-1.1em) scaleY(1.5) ;
+  }
+  
+  @keyframes moveIn {
+    50%, 100% { 
+      transform: translateY(0em)
+    }
+    0%   { 
+    opacity: 0; 
+    filter: blur(15px);
+    
+    }
+    100% { 
+    opacity: 1; 
+    filter: blur(0px);
+    }
+  }
+  
+  
+  
+  .debug .jt__row:nth-child(even) {
+    color: black;
+    background: white;
+  }
+  .debug .jt__row:nth-child(odd) {
+    color: white;
+    background: black;
+  }
+  
+  * { box-sizing: border-box }
+  
+  h5 {
+    
+    color: rgb(175, 3, 3);
+    height: 100%;
+  }
+  
+ 
+  body {
+
+    font-family: "Azeret Mono", monospace;
+    font-style:normal;
+      ; /* Schriftfarbe weiß */
+    background-color: black; /* Hintergrundfarbe schwarz */
+    /* Hintergrundbild über das ganze Fenster strecken */
+    background-image: url('/IMG/background/Background_picture.jpg');
+    height: 885px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
