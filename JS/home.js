@@ -436,31 +436,114 @@ function openNav() {
       ],
       description: 'Hier Beschreibung für Body Dunkel 2.'
     },
+    akt_nude_2: {
+      slides: [
+        { src: '/IMG/akt/nude/akt_nude_2.jpg', caption: 'Aktzeichenen', type: 'image' },
+        { src: '/IMG/akt/nude/akt_nude_17.jpg', caption: 'Aktzeichenen', type: 'image' },
+      ],
+      description: 'Hier Beschreibung für Body Dunkel 2.'
+    },
+    akt_nude_3: {
+      slides: [
+        { src: '/IMG/akt/nude/akt_nude_3.jpg', caption: 'Aktzeichenen', type: 'image' },
+        { src: '/IMG/akt/nude/akt_nude_4.jpg', caption: 'Aktzeichenen', type: 'image' },
+        { src: '/IMG/akt/nude/akt_nude_11.jpg', caption: 'Aktzeichenen', type: 'image' },
+        { src: '/IMG/akt/nude/akt_nude_12.jpg', caption: 'Aktzeichenen', type: 'image' },
+      ],
+      description: 'Hier Beschreibung für Body Dunkel 2.'
+    },
     akt_nude_1: {
       slides: [
-        { src: '/IMG/Illustrator/Pilzplakat mit drip und anerii blau.jpg"', caption: 'Cuiller les Champignon', type: 'image' },
+        { src: '/IMG/akt/nude/akt_nude_1.jpg', caption: 'Aktzeichenen', type: 'image' },
+        { src: '/IMG/akt/nude/akt_nude_13.jpg', caption: 'Aktzeichenen', type: 'image' },
+        { src: '/IMG/akt/nude/akt_nude_14.jpg', caption: 'Aktzeichenen', type: 'image' },
+        { src: '/IMG/akt/nude/akt_nude_15.jpg', caption: 'Aktzeichenen', type: 'image' },
       ],
       description: 'Hier Beschreibung für Body Dunkel 2.'
     },
-    pastell_pilze: {
+    akt_nude_5: {
       slides: [
-        { src: '/IMG/Illustrator/Pilzplakat mit drip und anerii blau.jpg"', caption: 'Cuiller les Champignon', type: 'image' },
+        { src: '/IMG/akt/nude/akt_nude_5.jpg', caption: 'Aktzeichenen', type: 'image' },
+        { src: '/IMG/akt/nude/akt_nude_6.jpg', caption: 'Aktzeichenen', type: 'image' },
+        { src: '/IMG/akt/nude/akt_nude_7.jpg', caption: 'Aktzeichenen', type: 'image' },
+        { src: '/IMG/akt/nude/akt_nude_16.jpg', caption: 'Aktzeichenen', type: 'image' },
       ],
       description: 'Hier Beschreibung für Body Dunkel 2.'
     },
-    pastell_pilze: {
+    akt_nude_8: {
       slides: [
-        { src: '/IMG/Illustrator/Pilzplakat mit drip und anerii blau.jpg"', caption: 'Cuiller les Champignon', type: 'image' },
+        { src: '/IMG/akt/nude/akt_nude_8.jpg', caption: 'Aktzeichenen', type: 'image' },
+        { src: '/IMG/akt/nude/akt_nude_9.jpg', caption: 'Aktzeichenen', type: 'image' },
+        { src: '/IMG/akt/nude/akt_nude_10.jpg', caption: 'Aktzeichenen', type: 'image' },
       ],
       description: 'Hier Beschreibung für Body Dunkel 2.'
     },
-    pastell_pilze: {
+    akt_nude_18: {
       slides: [
-        { src: '/IMG/Illustrator/Pilzplakat mit drip und anerii blau.jpg"', caption: 'Cuiller les Champignon', type: 'image' },
+        { src: '/IMG/akt/nude/akt_nude_18.jpg', caption: 'Aktzeichenen', type: 'image' },
+      ],
+      description: 'Hier Beschreibung für Body Dunkel 2.'
+    },
+    kohle_gesicht_5: {
+      slides: [
+        { src: '/IMG/Kohle/kohle_kopf_5.jpg', caption: 'Gesicht mit Kohle', type: 'image' },
+        { src: '/IMG/Kohle/kohle_kopf_4.jpg', caption: 'Gesicht mit Kohle', type: 'image' },
+      ],
+      description: 'Hier Beschreibung für Body Dunkel 2.'
+    },
+    kohle_gesicht_2: {
+      slides: [
+        { src: '/IMG/Kohle/kohle_kopf_2.jpg', caption: 'Gesicht mit Kohle', type: 'image' },
+      ],
+      description: 'Hier Beschreibung für Body Dunkel 2.'
+    },
+    kohle_gesicht_9: {
+      slides: [
+        { src: '/IMG/Kohle/kohle_kopf_9.jpg', caption: 'Gesicht mit Kohle', type: 'image' },
+        { src: '/IMG/Kohle/kohle_kopf_7.jpg', caption: 'Gesicht mit Kohle', type: 'image' },
+        { src: '/VIDEO/Gesicht_1.MOV', caption: 'Gesicht mit Kohle', type: 'video' },
+      ],
+      description: 'Hier Beschreibung für Body Dunkel 2.'
+    },
+    kohle_gesicht_6: {
+      slides: [
+        { src: '/IMG/Kohle/kohle_kopf_6.jpg', caption: 'Gesicht mit Kohle', type: 'image' },
+        { src: '/IMG/Kohle/kohle_kopf_3.jpg', caption: 'Gesicht mit Kohle', type: 'image' },
+      ],
+      description: 'Hier Beschreibung für Body Dunkel 2.'
+    },
+    kohle_gesicht_1: {
+      slides: [
+        { src: '/IMG/Kohle/kohle_kopf_1.jpg', caption: 'Gesicht mit Kohle', type: 'image' },
+      ],
+      description: 'Hier Beschreibung für Body Dunkel 2.'
+    },
+    kohle_gesicht_8: {
+      slides: [
+        { src: '/IMG/Kohle/kohle_kopf_8.jpg', caption: 'Gesicht mit Kohle', type: 'image' },
+      ],
+      description: 'Hier Beschreibung für Body Dunkel 2.'
+    },
+    kohle_nilpferd: {
+      slides: [
+        { src: '/IMG/Kohle/kohle_nilpferd.jpg', caption: 'Gesicht mit Kohle', type: 'image' },
+      ],
+      description: 'Hier Beschreibung für Body Dunkel 2.'
+    },
+    kohle_portrait: {
+      slides: [
+        { src: '/IMG/Kohle/kohle_portrait.jpg', caption: 'Gesicht mit Kohle', type: 'image' },
+      ],
+      description: 'Hier Beschreibung für Body Dunkel 2.'
+    },
+    kohle_portrait_2: {
+      slides: [
+        { src: '/IMG/Kohle/kohle_portrait (2).jpg', caption: 'Gesicht mit Kohle', type: 'image' },
       ],
       description: 'Hier Beschreibung für Body Dunkel 2.'
     },
   };
+  
   
   document.getElementById('openModalButton').addEventListener('click', function() {
     const project = 'project'; // Replace 'someProject' with the desired project
