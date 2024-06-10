@@ -91,7 +91,7 @@ h2, .text-container, #animated-text {
     color: #f0f0f0;
 }
 h2{
-    font-family: "Bungee Inline", sans-serif;
+    font-family: "Bungee Outline", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 450%;
@@ -159,12 +159,17 @@ h3{
     font-style: normal;
     font-size: xx-large;
     color: #f1f1f1;
+
+ 
 }
 h4{
-    font-family: "Bungee Outline", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+   
+    font-style:normal;
     color: #f1f1f1;
+    font-size: large;
+    padding-bottom: 100px;
+
+
 }
 
 
@@ -175,11 +180,11 @@ h4{
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
-    text-shadow: 0 0 15px rgb(70, 23, 23);
+    text-shadow: 0 0 15px rgb(133, 133, 133);
   }
   
   .jt__row {
-    display: block;
+    display: inline;
   }
   .jt__row:nth-child(1) {
     clip-path: polygon(-10% 75%, 110% 75%, 110% 110%, -10% 110%);
@@ -246,19 +251,25 @@ h4{
   
   .debug .jt__row:nth-child(even) {
     color: black;
-    background: white;
+    background: transparent;
   }
   .debug .jt__row:nth-child(odd) {
     color: white;
-    background: black;
+    background: transparent;
   }
   
   * { box-sizing: border-box }
   
   h5 {
-    
-    color: rgb(175, 3, 3);
+    margin-top: -50px;
+    color: rgb(245, 244, 244);
     height: 100%;
+     }
+
+  h6 {
+    margin-top: -50px;
+font-size: 5vmin;
+background-color: transparent;
   }
   
  
@@ -275,3 +286,98 @@ h4{
     background-position: center;
     background-repeat: no-repeat; 
 }
+
+body {
+    display:grid;
+    grid-template-rows: 1fr 10rem auto;
+    grid-template-areas:"main" "." "footer";
+    overflow-x:hidden;
+       min-height:100vh;
+.footer {
+    margin-left: -35px;
+    margin-right: -10px;
+        z-index: 1;
+        --footer-background:#fcf4f5;
+        display:grid;
+        position: relative;
+        grid-area: footer;
+        min-height:12rem;
+
+.bubbles {
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            height:1rem;
+            background:var(--footer-background);
+            filter:url("#blob");
+.bubble {
+                position: absolute;
+                left:var(--position, 50%);
+                background:var(--footer-background);
+                border-radius:100%;
+                animation:bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s),
+                    bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+                transform:translate(-50%, 100%);
+}
+}
+        .content {
+            z-index: 2;
+            display:grid;
+            grid-template-columns: 1fr auto;
+            grid-gap: 4rem;
+            padding:2rem;
+            background:var(--footer-background);
+            a, p {
+                color:#000000;
+                text-decoration:none;
+            }
+            b {
+                color:rgb(0, 0, 0);
+            }
+            p {
+                margin:0;
+                font-size:.75rem;
+            }
+            >div {
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                >div {
+                    margin:0.25rem 0;
+                    >* {
+                        margin-right:.5rem;
+                    }
+                }
+                .image {
+                    align-self: center;
+                    width:4rem;
+                    height:4rem;
+                    margin:0.25rem 0;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+        }
+    }
+}
+
+@keyframes bubble-size {
+    0%, 75% {
+        width:var(--size, 4rem);
+        height:var(--size, 4rem);
+    }
+    100% {
+        width:0rem;
+        height:0rem;
+    }
+}
+@keyframes bubble-move {
+    0% {
+        bottom:-4rem;
+    }
+    100% {
+        bottom:var(--distance, 10rem);
+    }
+}
+
