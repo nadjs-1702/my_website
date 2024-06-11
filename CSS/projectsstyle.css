@@ -234,12 +234,7 @@ body {
   .modal-caption p {
     margin: 5px 0;
   }
-  h2{
-    font-family: "Bungee Inline", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 450%;
-}
+
 
 body {
   background-color: #f1f1f1;
@@ -359,5 +354,11 @@ body {
   }
 }
 p{
-padding-bottom: 7250px;
+margin-top: 7250px;
+}
+h2{
+  font-family: "Bungee Inline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 450%;
 }
