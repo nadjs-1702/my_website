@@ -85,7 +85,8 @@
 body {
     background-color: #000000;
    margin-left: 30px;
-   color:#f1f1f1
+   margin-right: 45px;
+    color:#f1f1f1
 }
 
 h2, .text-container, #animated-text {
@@ -149,15 +150,16 @@ footer {
   }
   
 body {
+
     display:grid;
     grid-template-rows: 1fr 10rem auto;
     grid-template-areas:"main" "." "footer";
     overflow-x:hidden;
-       min-height:100vh;
+    min-height:100vh;
 .footer {
     margin-top: 80px;
     margin-left: -35px;
-    margin-right: -10px;
+    margin-right: -45px;
         z-index: 1;
         --footer-background:#fcf4f5;
         display:grid;
@@ -245,4 +247,23 @@ body {
 
 .instagram-media{
     text-align: center;
+
+}
+
+/* Styles for container and centered box */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 5px solid #ffffff;
+}
+
+.borderbox{
+    border: 2px solid #ffffff;
+padding: 100px;
 }
