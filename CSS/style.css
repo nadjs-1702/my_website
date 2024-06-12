@@ -161,7 +161,7 @@ body {
     margin-left: -35px;
     margin-right: -45px;
         z-index: 1;
-        --footer-background:#fcf4f5;
+        --footer-background:#f1f1f1;
         display:grid;
         position: relative;
         grid-area: footer;
